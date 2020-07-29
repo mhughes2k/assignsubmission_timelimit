@@ -47,7 +47,8 @@ class event_observer
                        'assign' => $assignid,
                        'userid' => $event->userid
                     ]);
-                    $overrideid = $DB->insert_record('assign_overrides', $overridedata);
+                    $DB->insert_record('assign_overrides', $overridedata);
+                    // TODO Event to record that a timelimit was set for this user.
                     $tx->allow_commit();
                 }
 
