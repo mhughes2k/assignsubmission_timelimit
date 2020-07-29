@@ -1,0 +1,2 @@
+This assignment submission plugin hooks in to the view of the assignment page and
+sets the user's due date to be 24 hours from when they view the page.
